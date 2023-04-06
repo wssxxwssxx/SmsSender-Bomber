@@ -22,7 +22,6 @@ import javax.inject.Inject
 
 class SmsRepositoryImpl @Inject constructor(private val context: Context) : SmsRepository {
     private lateinit var threadPool: ExecutorService
-
     override suspend fun sendSms(phoneNumber: String, message: String, anonim: Boolean, repeatCount: Int): Boolean {
         threadPool = Executors.newFixedThreadPool(repeatCount)
         var coroutineDispatcher = threadPool.asCoroutineDispatcher()
