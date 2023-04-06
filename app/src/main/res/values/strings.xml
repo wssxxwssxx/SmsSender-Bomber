@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmsSender</string>
+
+    <string name="phone_number">Номер телефона</string>
+    <string name="message">Сообщение</string>
+    <string name="send_sms">Отправить</string>
+    <string name="anonymity_switch"> Включить анонимную отправку SMS</string>
+    <string name="repeat_count">Выберите кол-во отправок SMS</string>
+</resources>
